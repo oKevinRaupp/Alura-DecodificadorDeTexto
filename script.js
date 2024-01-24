@@ -30,6 +30,8 @@ function descriptografar(){
     titulo.remove();
     paragrafo.remove();
 
+    if (!stringDescriptografada) stringDescriptografada = 'Nenhuma mensagem, tente novamente! ';
+
     copiar.removeAttribute("hidden");
 
     resposta.innerHTML = stringDescriptografada;
