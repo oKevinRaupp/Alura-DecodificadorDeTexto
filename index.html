@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador Kevin</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="body">
+    <section>
+        <img src="assets/LogoAlura.svg" alt="Logo Alura" id="LogoAlura">
+    </section>
+    <main class="main">
+        <section class="section__texto__descriptografado">
+            <textarea class="input" id="input" placeholder="Digite seu texto"></textarea>
+            <div class="div__aviso__botoes">
+                <p class="paragrafo__aviso"><img src="assets/exclamacao.png" alt="Aviso">Apenas letras minúsculas e sem acento.</p>
+                <div class="div__texto__descriptografado__botoes">
+                    <button onclick="criptografar()" class="btn-blue">Criptografar</button>
+                    <button onclick="descriptografar()" class="btn-white">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <section class="mensagens">
+            <div class="mensagens__div">
+                <img class="mensagens__div__imagem" src="assets/ImagemProcurando.svg" alt="Procurando">
+                <h2 class="mensagem__div__titulo">Nenhuma mensagem encontrada.</h2>
+                <p class="mensagens__div__texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <p class="resposta"></p>
+                <button onclick="copiarTexto()" id="btn-copiar" hidden>Copiar texto</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desenvolvido por <a href="https://github.com/oKevinRaupp"><strong> Kevin Raupp</strong></a></p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
